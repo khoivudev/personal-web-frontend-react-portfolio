@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import uuid from 'uuid';
 
-class TodoTask extends Component{
+class Todotask extends Component{
     state = {
         tasks:[
             {id: uuid(), content: "Milk"},
@@ -20,4 +20,4 @@ class TodoTask extends Component{
     }
 }
 
-export default TodoTask;
+export default Todotask;

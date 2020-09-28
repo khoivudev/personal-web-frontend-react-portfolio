@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import {Switch, Route} from 'react-router-dom';
 
-import LandingPage from './Landingpage';
-import Projects from './Projects';
-import Contact from './Contact';
-import TodoTask from './TodoTask';
+import LandingPage from './landingpage';
+import Projects from './projects';
+import Contact from './contact';
+import Todotask from './todotask';
 
 class Main extends Component{
     render(){
@@ -13,7 +13,7 @@ class Main extends Component{
                 <Route exact path="/" component={LandingPage}/>
                 <Route  path="/projects" component={Projects}/>
                 <Route  path="/contact" component={Contact}/>
-                <Route  path="/todotask" component={TodoTask}/>
+                <Route  path="/todotask" component={Todotask}/>
             </Switch>
             
         );
