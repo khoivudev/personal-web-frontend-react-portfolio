@@ -12,7 +12,7 @@ class Landing extends Component{
     }
    
     componentDidMount(){
-        axios.get('https://vhk-services-api.herokuapp.com/api/quote')
+        axios.get('/api/quote')
         .then(res => {
             const quote = res.data;
             this.setState({
