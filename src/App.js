@@ -4,7 +4,7 @@ import {
     Layout, Header, Navigation, Drawer, Content,
     Footer, FooterSection, FooterLinkList,
 } from 'react-mdl';
-import Main from './components/main';
+import Main from './components/Main';
 import {Link} from 'react-router-dom';
 
 class App extends Component {
@@ -12,19 +12,19 @@ class App extends Component {
         return(
             <div className="demo-big-content">
             <Layout>
-                <Header title="K-Zone">
+                <Header style={{backgroundColor:'white',color:'black'}} title="K-Zone">
                     <Navigation>
-                        <Link to="/">Home</Link>
-                        <Link to="/projects">Projects</Link>
-                        <Link to="/contact">Contact</Link>
+                        <Link to="/" style={{color:'black'}}>Home</Link>
+                        <Link to="/projects" style={{color:'black'}}>Projects</Link>
+                        <Link to="/contact" style={{color:'black'}}>Contact</Link>
                     </Navigation>
                 </Header>
                 
-                <Drawer title="K-Zone">
+                <Drawer title="K-Zone" style={{backgroundColor:'white',color:'black'}}>
                     <Navigation>
-                        <Link to="/">Home</Link>
-                        <Link to="/projects">Projects</Link>
-                        <Link to="/contact">Contact</Link>
+                        <Link to="/" style={{color:'black'}}>Home</Link>
+                        <Link to="/projects" style={{color:'black'}}>Projects</Link>
+                        <Link to="/contact" style={{color:'black'}}>Contact</Link>
                     </Navigation>
                 </Drawer>
 

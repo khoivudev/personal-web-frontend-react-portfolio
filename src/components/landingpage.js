@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-import { Cell, Grid } from 'react-mdl';
-import LoadingIcon from './loading';
-
+import Grid from '@material-ui/core/Grid';
+import LoadingIcon from './Loading';
 import axios from 'axios';
 
 class Landing extends Component{
@@ -29,11 +28,11 @@ class Landing extends Component{
         var {isLoaded, quote} = this.state;
 
         if(!isLoaded){
-            return <div className="my-container"><LoadingIcon/></div>
+            return <div className="loading-container"><LoadingIcon/></div>
         }else{
             return(
                 <div style={{witdh:'100%',margin: 'auto'}}>
-                    <div  className="welcome-grid">
+                    <div  className="welcome-container">
                         <h1>Welcome</h1>
                         <p>How are you doing, today?</p>
                         <div id="quoteDisplay">
@@ -41,39 +40,41 @@ class Landing extends Component{
                             <h4 className ="author"> - {quote.author}</h4>
                         </div>
                     </div>
-                    <Grid className="about-grid odd-background-color">
-                    <Cell col={12}>
-                        <img
-                        src={process.env.REACT_APP_MY_AVATAR_URL}
-                        alt="avatar"
-                        className="avatar-img"
-                        />
-    
-                        <div className="banner-text">
-                            <h1>Hey, I am Khoi</h1>
-                            <p>a web developer</p>
-                            <hr/>
-                            <p>| Skill |</p>
-                            <div className= "social-links">
-                                {/*Github*/}
-                                <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
-                                    <i className="fab fa-github" aria-hidden="true"></i>
-                                </a>
-    
-                                {/*Facebook*/}
-                                <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
-                                    <i className="fab fa-facebook" aria-hidden="true"></i>
-                                </a>
-    
-                                {/*Gmail*/}
-                                <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
-                                    <i className="fab fa-google" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                        </div>
-    
-                    </Cell>
-                    </Grid>
+                    <div className="about-container">
+                        <Grid>
+                            <Grid item xs={12}>
+                                <img
+                                src={process.env.REACT_APP_MY_AVATAR_URL}
+                                alt="avatar"
+                                className="avatar-img"
+                                />
+            
+                                <div className="banner-text">
+                                    <h1>Hey, I am Khoi</h1>
+                                    <p>a web developer</p>
+                                    <hr/>
+                                    <p>| Skill |</p>
+                                    <div className= "social-links">
+                                        {/*Github*/}
+                                        <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+                                            <i className="fab fa-github" aria-hidden="true"></i>
+                                        </a>
+            
+                                        {/*Facebook*/}
+                                        <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+                                            <i className="fab fa-facebook" aria-hidden="true"></i>
+                                        </a>
+            
+                                        {/*Gmail*/}
+                                        <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">
+                                            <i className="fab fa-google" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </Grid>
+                        
+                        </Grid>
+                    </div>
                 </div>
             );
         }

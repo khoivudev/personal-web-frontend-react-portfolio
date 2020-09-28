@@ -6,9 +6,16 @@
 }
 
 
+/*NAV BAR*/
+
+.mdl-layout__drawer-button {
+    color: black !important;
+}
+
+
 /*MY CONTAINER*/
 
-.my-container {
+.loading-container {
     text-align: center;
     min-height: var(--page-min-height);
     display: flex;
@@ -20,9 +27,9 @@
 }
 
 
-/*LANDING PAGE | WELCOME-GRID*/
+/*LANDING PAGE | WELCOME-CONTAINER*/
 
-.welcome-grid {
+.welcome-container {
     text-align: center;
     min-height: var(--page-min-height);
     display: flex;
@@ -33,14 +40,14 @@
     color: var(--dark-font-color);
 }
 
-.welcome-grid h1 {
+.welcome-container h1 {
     font-family: var(--main-font);
     font-size: 5rem;
     font-weight: 700;
     margin: 0;
 }
 
-.welcome-grid p {
+.welcome-container p {
     font-size: 2rem;
     font-weight: 200;
     font-style: italic;
@@ -49,10 +56,9 @@
 
 /*LANDING PAGE | ABOUT SECTION*/
 
-.about-grid {
+.about-container {
     text-align: center;
     min-height: var(--page-min-height);
-    display: flex;
     color: var(--dark-font-color);
 }
 
@@ -111,27 +117,19 @@ img {
 
 /*PROJECTS PAGE*/
 
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem;
+.projects-container {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
     margin-bottom: 6rem;
     min-height: 100vh;
-}
-
-@media (max-width: 30.625em) {
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
+    padding: 20px 0px 0px 40px;
 }
 
 
 /*CONTACT PAGE*/
 
-.contact-grid {
+.contact-container {
     margin: auto;
     position: relative;
     width: 100%;
@@ -143,16 +141,16 @@ img {
     color: var(--dark-font-color);
 }
 
-.contact-grid h2 {
+.contact-container h2 {
     font-family: var(--main-font);
 }
 
-.contact-grid p {
+.contact-container p {
     font-family: var(--main-font);
     color: black;
 }
 
-.contact-grid hr {
+.contact-container hr {
     border-top: 5px solid var(--dark-font-color);
     width: 90%;
     margin: auto;
@@ -186,4 +184,18 @@ img {
     font-size: 1.2rem;
     font-style: italic;
     margin-top: 0;
+}
+
+
+/*TodoTask*/
+
+.todotask-container {
+    text-align: center;
+    min-height: var(--page-min-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-background);
+    color: var(--dark-font-color);
 }
