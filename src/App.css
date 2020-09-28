@@ -6,6 +6,20 @@
 }
 
 
+/*MY CONTAINER*/
+
+.my-container {
+    text-align: center;
+    min-height: var(--page-min-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-background);
+    color: var(--dark-font-color);
+}
+
+
 /*LANDING PAGE | WELCOME-GRID*/
 
 .welcome-grid {

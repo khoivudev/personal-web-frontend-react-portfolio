@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import { Cell, Grid } from 'react-mdl';
+import LoadingIcon from './loading';
+
 import axios from 'axios';
 
 class Landing extends Component{
@@ -27,7 +29,7 @@ class Landing extends Component{
         var {isLoaded, quote} = this.state;
 
         if(!isLoaded){
-            return <div style={{minHeight: '100vh'}}>Loading...</div>
+            return <div className="my-container"><LoadingIcon/></div>
         }else{
             return(
                 <div style={{witdh:'100%',margin: 'auto'}}>
