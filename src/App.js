@@ -4,8 +4,8 @@ import {
     Layout, Header, Navigation, Drawer, Content,
     Footer, FooterSection, FooterLinkList,
 } from 'react-mdl';
-import Main from './components/Main';
 import {Link} from 'react-router-dom';
+import Main from './components/Main';
 
 class App extends Component {
     render(){
