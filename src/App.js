@@ -5,7 +5,7 @@ import {
     Footer, FooterSection, FooterLinkList,
 } from 'react-mdl';
 import {Link} from 'react-router-dom';
-import Main from './components/Main123';
+import Main from './components/Main';
 
 class App extends Component {
     render(){

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Grid from '@material-ui/core/Grid';
-import LoadingIcon from './Loading123';
+import LoadingIcon from './Loading';
 import axios from 'axios';
 
 class Landing extends Component{
