@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import {Switch, Route} from 'react-router-dom';
 
-import LandingPage from './landingpage';
-import Projects from './projects';
-import Contact from './contact';
-import TodoTask from './todotask';
+import LandingPage from './Landingpage';
+import Projects from './Projects';
+import Contact from './Contact';
+import TodoTask from './Todotask';
 
 class Main extends Component{
     render(){
