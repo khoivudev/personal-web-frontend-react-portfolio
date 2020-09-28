@@ -20,6 +20,16 @@ Set Proxy to deloy Heroku:
 2. Create static.json file
 {
     "root": "build/",
+    "clean_urls": false,
+    "routes": {
+        "/**": "index.html"
+    },
+    "https_only": true,
+    "headers": {
+        "/**": {
+            "Strict-Transport-Security": "max-age=7776000"
+        }
+    },
     "proxies": {
         "/api/": {
             "origin": "${API_URL}"
